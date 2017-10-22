@@ -1,0 +1,179 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+	/*background: #e6e6e6;*/
+}
+
+header{
+	width: 100%;
+	background: #4E94AB;
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #000000;
+}
+
+header label:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.menu li{
+	/*
+	text-align: center;
+	flex-grow: 1;*/
+	border-right: 1px solid #fff;
+}
+
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+@media(max-width: 768px){
+	header label{
+		display: block;
+	}
+
+	.menu{
+		position: absolute;
+		background: #4E94AB;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+
+	.imagenes ul{
+		flex-direction: column;
+	}
+
+	.videos_cursos .videos{
+		width: 100%;
+	}
+
+	.menu li{
+		border-top: 1px solid #fff;
+	}
+
+	#btn-menu:checked ~ .menu{
+		margin:0;
+	}
+}
+
+h1, h2, h3{
+	color: #086A87;
+}
+
+div{
+	padding-left: 10px;
+}
+
+.imagenes ul{
+	
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.imagenes li{
+	/*
+	text-align: center;
+	flex-grow: 1;*/
+	border-right: 2px solid #fff;
+	flex-grow: 1;
+}
+
+
+/*--------------------------------------*/
+.main .articulos{
+	width: 70%;
+	float: left;
+}
+aside{
+	width:30%;
+	background:#ff8000;
+	float:left;
+
+}
+
+.tabla_tarifas th{
+	width: 30%;
+	
+}
+
+.tabla_tarifas .verde{
+	background: #8FBC8F;
+}
+
+.tabla_tarifas .beige{
+	background:  #BDB76B;	
+}
+
+.tabla_tarifas .ultima_linea{
+	background:  #B22222;	
+}
+
+.tabla_tarifas .tablas_categoria{
+	background: #D3D3D3;
+}
+
+.tabla_equipo{
+	width: 100%;
+	align-content: center;
+}
+
+.tabla_equipo .espacio{
+	height: 40px;
+}
+
+.main_colaboradores{
+	background: white;
+}
+
+.base{
+	display: flex;
+
+}
+.base .parrafo-base{
+	display: flex;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+    left: 0px;
+}
+
+.base .imagen-bottom{
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.tabla_tarifas{
+	background: white;
+}
